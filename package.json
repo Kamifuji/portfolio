@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@macaron-css/core": "^1.2.0",
-    "@macaron-css/react": "^1.4.0",
     "@types/node": "20.2.3",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
+    "@vanilla-extract/css": "^1.11.1",
+    "@vanilla-extract/next-plugin": "^2.1.3",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
     "next": "^13.4.3",
