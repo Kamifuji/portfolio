@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { styles } from "./KeyVisual.css";
-import keyVisualImage from "../../../../public/dummy_key_visual.png";
+import Image from 'next/image'
+import { styles } from './KeyVisual.css'
+import keyVisualImage from '../../../../public/dummy_key_visual.png'
 
 export const KeyVisual = () => {
   return (
@@ -11,5 +11,5 @@ export const KeyVisual = () => {
       </div>
       <Image src={keyVisualImage} alt="ダミー" />
     </section>
-  );
-};
+  )
+}

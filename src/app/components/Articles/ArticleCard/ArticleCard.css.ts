@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css";
+import { style } from '@vanilla-extract/css'
 
 export const styles = {
   image: style({
@@ -9,4 +9,4 @@ export const styles = {
   title: style({
     fontSize: 18
   })
-};
+}

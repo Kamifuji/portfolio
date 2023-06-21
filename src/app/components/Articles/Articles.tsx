@@ -1,5 +1,5 @@
-import { ArticleCard } from "./ArticleCard/ArticleCard"
-import { styles } from "./Articles.css";
+import { ArticleCard } from './ArticleCard/ArticleCard'
+import { styles } from './Articles.css'
 
 export const Articles = () => {
   return (
@@ -9,5 +9,5 @@ export const Articles = () => {
       <ArticleCard />
       <ArticleCard />
     </section>
-  );
+  )
 }

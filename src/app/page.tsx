@@ -1,6 +1,6 @@
-import { styles } from "./page.css";
-import { Articles } from "./components/Articles/Articles";
-import { KeyVisual } from "./components/KeyVisual/KeyVisual";
+import { styles } from './page.css'
+import { Articles } from './components/Articles/Articles'
+import { KeyVisual } from './components/KeyVisual/KeyVisual'
 
 export default function Home() {
   return (
@@ -8,5 +8,5 @@ export default function Home() {
       <KeyVisual />
       <Articles />
     </main>
-  );
+  )
 }

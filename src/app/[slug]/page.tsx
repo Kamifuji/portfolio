@@ -1,5 +1,3 @@
 export default function Page() {
-  return (
-    <main>ほげ</main>
-  )
+  return <main>ほげ</main>
 }
