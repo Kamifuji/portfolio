@@ -1,10 +1,18 @@
 import Image from 'next/image'
 import { styles } from './ArticleCard.css'
 import Link from 'next/link'
+import { FC } from 'react'
 
-export const ArticleCard = () => {
+type ArticleCardProps = {
+  title: string
+  href: string
+  date: string
+}
+
+export const ArticleCard: FC<ArticleCardProps> = (props) => {
+  const { title, href, date } = props
   return (
-    <Link href="/hoge">
+    <a href={href} target="_blank">
       <article>
         <Image
           src="/dummy_article.png"
@@ -13,8 +21,9 @@ export const ArticleCard = () => {
           width={720}
           height={539}
         />
-        <h2 className={styles.title}>ここにタイトルが入る</h2>
+        <h2 className={styles.title}>{title}</h2>
+        <p>{date}</p>
       </article>
-    </Link>
+    </a>
   )
 }
