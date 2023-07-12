@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <KeyVisual />
+      {/* @ts-expect-error Server Component */}
       <Articles />
     </main>
   )
