@@ -14,13 +14,6 @@ export const ArticleCard: FC<ArticleCardProps> = (props) => {
   return (
     <a href={href} target="_blank">
       <article>
-        <Image
-          src="/dummy_article.png"
-          alt="ダミー"
-          className={styles.image}
-          width={720}
-          height={539}
-        />
         <h2 className={styles.title}>{title}</h2>
         <p>{date}</p>
       </article>
