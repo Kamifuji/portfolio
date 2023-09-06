@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { BlogCard } from './BlogCard/BlogCard'
 import { styles } from './Blogs.css'
 
@@ -17,6 +18,7 @@ export const Blogs = () => {
           )
         })}
       </section>
+      
     </section>
   )
 }
