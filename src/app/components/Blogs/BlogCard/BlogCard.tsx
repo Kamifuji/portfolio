@@ -15,7 +15,7 @@ export const BlogCard: FC<BlogCardProps> = (props) => {
     <Link href={href}>
       <article>
         <Image
-          src="/dummy_article.png"
+          src="/image_2.png"
           alt="ダミー"
           className={styles.image}
           width={720}

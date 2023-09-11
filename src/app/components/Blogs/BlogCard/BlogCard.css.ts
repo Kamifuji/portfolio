@@ -2,9 +2,10 @@ import { style } from '@vanilla-extract/css'
 
 export const styles = {
   image: style({
-    height: 280,
-    maxWidth: '100%',
-    objectFit: 'cover'
+    height: 'auto',
+    width: '100%',
+    objectFit: 'cover',
+    aspectRatio: '16 / 9',
   }),
   title: style({
     fontSize: 18
