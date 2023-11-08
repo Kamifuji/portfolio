@@ -3,7 +3,7 @@ import { styles } from './Blogs.css'
 
 export const Blogs = () => {
   return (
-    <section>
+    <section className={styles.root}>
       <h2 className={styles.h2}>個人制作物</h2>
       <section className={styles.section}>
         {blogsDummy.map((blog) => {
@@ -30,8 +30,8 @@ const blogsDummy = [
   },
   {
     id: 2,
-    title: 'dummy1',
-    date: '2021-01-01',
+    title: 'ここにいい感じの記事タイトル〜とってもほげほげ〜',
+    date: '2023-01-01',
     url: 'hoge'
   },
   {
