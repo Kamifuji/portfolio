@@ -12,8 +12,8 @@ type BlogCardProps = {
 export const BlogCard: FC<BlogCardProps> = (props) => {
   const { title, href, date } = props
   return (
-    <Link href={href}>
-      <article>
+    <Link href={href} className={styles.link} rel="nofollow">
+      <article className={styles.root}>
         <Image
           src="/image_2.png"
           alt="ダミー"
@@ -21,8 +21,10 @@ export const BlogCard: FC<BlogCardProps> = (props) => {
           width={720}
           height={539}
         />
-        <h2 className={styles.title}>{title}</h2>
-        <p>{date}</p>
+        <div className={styles.content}>
+          <h2 className={styles.title}>{title}</h2>
+          <p className={styles.date}>{date}</p>
+        </div>
       </article>
     </Link>
   )
