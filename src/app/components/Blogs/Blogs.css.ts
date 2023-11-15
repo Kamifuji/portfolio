@@ -12,14 +12,5 @@ export const styles = {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
     gap: 100
-  }),
-  ol: style({
-    listStyleType: 'upper-alpha',
-    color: 'darkblue',
-    // @ts-ignore
-    ':where(ol, ul)': {
-      listStyleType: 'lower-greek',
-      color: 'chocolate'
-    }
   })
 }
