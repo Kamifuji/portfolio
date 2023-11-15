@@ -17,6 +17,29 @@ export const Blogs = () => {
           )
         })}
       </section>
+      <ol className={styles.ol}>
+        <li>Saturn</li>
+        <li>
+          <ul>
+            <li>Mimas</li>
+            <li>Enceladus</li>
+            <li>
+              <ol>
+                <li>Voyager</li>
+                <li>Cassini</li>
+              </ol>
+            </li>
+            <li>Tethys</li>
+          </ul>
+        </li>
+        <li>Uranus</li>
+        <li>
+          <ol>
+            <li>Titania</li>
+            <li>Oberon</li>
+          </ol>
+        </li>
+      </ol>
     </section>
   )
 }
