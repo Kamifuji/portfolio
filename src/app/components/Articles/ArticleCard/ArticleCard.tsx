@@ -12,10 +12,15 @@ type ArticleCardProps = {
 export const ArticleCard: FC<ArticleCardProps> = (props) => {
   const { title, href, date } = props
   return (
-    <a href={href} target="_blank">
-      <article>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopenner noreferrer"
+      className={styles.link}
+    >
+      <article className={styles.article}>
         <h2 className={styles.title}>{title}</h2>
-        <p>{date}</p>
+        <p className={styles.date}>{date}</p>
       </article>
     </a>
   )

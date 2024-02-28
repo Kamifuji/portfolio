@@ -8,6 +8,6 @@ export const styles = {
   section: style({
     display: 'grid',
     gridTemplateColumns: '1fr',
-    gap: 100
+    gap: 32
   })
 }
