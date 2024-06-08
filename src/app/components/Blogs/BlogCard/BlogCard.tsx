@@ -7,16 +7,17 @@ type BlogCardProps = {
   title: string
   href: string
   date: string
+  imageSrc?: string
 }
 
 export const BlogCard: FC<BlogCardProps> = (props) => {
-  const { title, href, date } = props
+  const { title, href, date, imageSrc } = props
   return (
     <Link href={href} className={styles.link} rel="nofollow">
       <article className={styles.root}>
         <Image
-          src="/image_2.png"
-          alt="ダミー"
+          src={imageSrc || '/image_2.png'}
+          alt=""
           className={styles.image}
           width={720}
           height={539}

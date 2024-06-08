@@ -8,6 +8,7 @@ export default function Home() {
     <>
       <KeyVisual />
       <main className={styles.main}>
+        {/* @ts-expect-error Server Component */}
         <Blogs />
         {/* @ts-expect-error Server Component */}
         <Articles />

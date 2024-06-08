@@ -1,3 +1,5 @@
+import { MicroCMSDate, MicroCMSImage } from 'microcms-js-sdk'
+import { client } from '../../../libs/client'
 const QIITAURL = process.env.QIITA_ENDPOINT_URL
 const QIITAAPIKEY = process.env.QIITA_API_KEY
 
@@ -22,4 +24,17 @@ export const getQiitaPosts = async () => {
 
   const json = await response.json()
   return json
+}
+
+export type Blog = {
+  id: string
+  title: string
+  content: string
+  eyecatch?: MicroCMSImage
+} & MicroCMSDate
+
+export const getBlogs = async () => {
+  const response = await client.getList<Blog>({ endpoint: 'blog' })
+
+  return response
 }
